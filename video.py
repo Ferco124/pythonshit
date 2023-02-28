@@ -1,0 +1,12 @@
+ch = int(input('channel(s):'))
+sampling_rate = int(input('sampling rate:'))
+sampling_size = int(input('sampling size:'))
+resolution = input('resolution w*h:')
+color_depth = int(input('color depth:'))
+fps = int(input('frames per second:'))
+duration = int(input('duration:'))
+xloc = resolution.find('x')
+w = int(resolution[0:xloc])
+h = int(resolution[xloc + 1:len(resolution)])
+print(ch * sampling_rate * sampling_size * duration +
+      w * h * color_depth * fps * duration)

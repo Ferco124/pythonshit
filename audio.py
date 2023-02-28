@@ -1,0 +1,5 @@
+ch = int(input('channels:'))
+sr = int(input('sampling rate:'))
+sz = int(input('sampling size:'))
+dur = int(input('duration:'))
+print(ch * sr * sz * dur)
